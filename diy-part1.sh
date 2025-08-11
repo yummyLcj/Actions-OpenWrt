@@ -16,4 +16,6 @@
 # Add a feed source
 echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' >>feeds.conf.default
 
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+
 echo "src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall2.git;main" >> feeds.conf.default
