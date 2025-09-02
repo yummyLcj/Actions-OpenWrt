@@ -18,9 +18,9 @@ echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-pa
 
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luck-app-adguardhome
-git clone https://github.com/rufengsuixing/luci-app-zerotier.git package/luci-app-zerotier
-git clone https://github.com/rufengsuixing/luci-app-onliner.git package/luci-app-onliner
-git clone https://github.com/rufengsuixing/luci-app-autoipsetadder.git package/luci-app-autoipsetadder
-git clone https://github.com/rufengsuixing/auto-ipsetadder-for-openwrt.git package/auto-ipsetadder-for-openwrt
+#git clone https://github.com/rufengsuixing/luci-app-zerotier.git package/luci-app-zerotier
+#git clone https://github.com/rufengsuixing/luci-app-onliner.git package/luci-app-onliner
+#git clone https://github.com/rufengsuixing/luci-app-autoipsetadder.git package/luci-app-autoipsetadder
+#git clone https://github.com/rufengsuixing/auto-ipsetadder-for-openwrt.git package/auto-ipsetadder-for-openwrt
 
 echo "src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall2.git;main" >> feeds.conf.default
