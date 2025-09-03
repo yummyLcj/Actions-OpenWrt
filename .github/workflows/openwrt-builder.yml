@@ -150,14 +150,16 @@ jobs:
 
     - name: Check space usage
       if: (!cancelled())
-      run: df -hT
+      run: |
+        df -hT
+        ls openwrt/bin/targets/x86/64
 
     - name: Upload bin directory
       uses: actions/upload-artifact@main
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: openwrt/bin
+        path: openwrt/bin/targets/x86/64/openwrt-x86-64-generic-squashfs-combined.img
 
     - name: Organize files
       id: organize
